@@ -1,28 +1,120 @@
-# Firebase build and deployment files
-/firebase-debug.log
-/firebase-debug.*.log
+# ==========================================
+# SECURITY & SECRETS
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+secrets.json
+auth.json
+service-account.json
+.runtimeconfig.json
+genkit-state.json
+
+# ==========================================
+# FIREBASE & GENKIT
+# ==========================================
+.firebase/
 .firebaserc
-
-# Firebase Hosting
-/firebase.json
-*.cache
-hosting/.cache
-
-# Firebase Functions
+firebase.json
+firebase-debug.log
+firebase-debug.*.log
+firebase-*.zip
+/emulator-ui/
 /functions/node_modules/
 /functions/.env
 /functions/package-lock.json
+banyn-ai/.env
 
-# Firebase Emulators
-/firebase-*.zip
-/.firebase/
-/emulator-ui/
+# ==========================================
+# NODE.JS & BUILD TOOLS
+# ==========================================
+node_modules/
+jspm_packages/
+web_modules/
+bower_components/
+dist/
+out/
+build/
+.cache/
+.parcel-cache
+.next
+.nuxt
+.svelte-kit/
+.vuepress/dist
+**/.vitepress/dist
+**/.vitepress/cache
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
+.temp/
+*.tsbuildinfo
 
-# Logs
+# ==========================================
+# LOGS & DIAGNOSTICS
+# ==========================================
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+pids
+*.pid
+*.seed
+*.pid.lock
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
 
-# Environment files (local configs)
-/.env.*
+# ==========================================
+# SYSTEM JUNK & IDEs
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.Spotlight-V100
+.Trashes
+.vscode/
+.vscode-test
+.idea/
+*.swp
+*.swo
+*~
+.tern-port
+
+# ==========================================
+# TESTING & COVERAGE
+# ==========================================
+lib-cov
+coverage
+*.lcov
+.nyc_output
+.grunt
+
+# ==========================================
+# PACKAGE MANAGERS
+# ==========================================
+*.tgz
+.yarn-integrity
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.npm
+.node_repl_history
+
+# ==========================================
+# OTHER CACHE & TEMPORARY
+# ==========================================
+.eslintcache
+.stylelintcache
+*.tmp
+*.temp
+hosting/.cache
