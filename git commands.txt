@@ -1,3 +1,4 @@
+#GIT COMMANDS
 check git branch:                               git branch --show-current
 
 Switch to an existing branch:                   git switch branch-name
@@ -15,3 +16,4 @@ Rename current branch:                          git branch -m new-name
 Delete a branch (must be merged first):         git branch -d branch-name
 
 Force delete a branch (unmerged):               git branch -D branch-name
+
